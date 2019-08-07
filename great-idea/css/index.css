@@ -64,3 +64,126 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* CSS for index.html */
+
+.container {
+	width: 90%;
+	margin: 20px;
+	padding: 20px;
+	padding-left: 60px;
+	border: 2px solid green;
+}
+
+header.header {
+	display: flex;
+	justify-content: space-between;
+}
+
+header nav a {
+	text-decoration: none;
+	color: gray;
+	padding: 40px;
+}
+
+header img.logo {
+	/* align-self: flex-end; */
+	
+}
+
+section.main {
+	display: flex;
+	justify-content: space-between;
+	padding: 40px 0;
+}
+
+section.main h1 {
+	font-size: 60px;
+}
+
+section.topContent {
+	display: flex;
+	padding: 20px;
+	border-top: 1px solid black;
+}
+
+section.bottomContent {
+	display: flex;
+	padding: 20px;
+	border-bottom: 1px solid black;
+}
+
+img.middle-img {
+	width: 100%;
+	padding: 20px;
+}
+
+footer h5 {
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+footer address {
+	padding-bottom: 10px;
+}
+
+footer h6 {
+	padding: 10px 0;
+}
+
+footer p {
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+/* CSS for services.html */
+
+.servicesContainer {
+	width:100%;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border: 1px solid red;
+}
+
+header.servicesHeader {
+	display: flex;
+	justify-content: space-between;
+}
+
+header.servicesHeader nav a {
+	text-decoration: none;
+	color: gray;
+	padding: 40px;
+}
+
+img.services-header-img {
+	width: 100%;
+}
+
+.textBox {
+	width: 500px;
+	height: 250px;
+	border: 1px solid black;
+}
+
+.servicesMainContent {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.servicesBottomPara {
+	height: 100px;
+	width: 45%;
+}
+
+.services-info-img {
+	width: 45%;
+}
+
+section.bottomWrapper {
+	display:flex;
+	justify-content: space-around;
+
+}
