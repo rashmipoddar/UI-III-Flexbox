@@ -71,12 +71,17 @@ h1, h2, h3, h4, h5 {
 	margin: 20px;
 	padding: 20px;
 	padding-left: 60px;
-	border: 2px solid green;
+	/* border: 2px solid green; */
 }
 
 header.header {
 	display: flex;
 	justify-content: space-between;
+}
+
+header nav {
+	display: flex;
+	justify-content: space-around;
 }
 
 header nav a {
@@ -86,18 +91,37 @@ header nav a {
 }
 
 header img.logo {
-	/* align-self: flex-end; */
-	
+	/* height: 50px; */
 }
 
 section.main {
 	display: flex;
-	justify-content: space-between;
+	/* justify-content: space-evenly; */
 	padding: 40px 0;
 }
 
 section.main h1 {
-	font-size: 60px;
+	font-size: 80px;
+	text-align: center;
+}
+section .mainTextContent {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-grow: 1;
+}
+
+section.main img {
+	width: 40%;
+	height: 40%;
+
+}
+
+section.main button {
+	width: 20%;
+	height: 40px;
+	background-color: white;
 }
 
 section.topContent {
@@ -138,12 +162,12 @@ footer p {
 /* CSS for services.html */
 
 .servicesContainer {
-	width:100%;
+	width:80%;
 	padding-top: 30px;
 	padding-bottom: 20px;
 	padding-left: 30px;
 	padding-right: 30px;
-	border: 1px solid red;
+	/* border: 1px solid red; */
 }
 
 header.servicesHeader {
@@ -157,20 +181,56 @@ header.servicesHeader nav a {
 	padding: 40px;
 }
 
+header.servicesHeader a img {
+	padding-top: 30px;
+}
+
 img.services-header-img {
 	width: 100%;
 }
 
-.textBox {
-	width: 500px;
-	height: 250px;
-	border: 1px solid black;
+article h1 {
+	font-size: 24px;
+	padding-top: 30px;
 }
 
-.servicesMainContent {
+article p {
+	padding-bottom: 40px;
+}
+
+.textBox {
+	width: 500px;
+	height: auto;
+	border: 1px solid black;
+	margin: 20px 0; 
+	padding: 20px;
+	/* background-color: #dfdfdf; */
+	
+	
+}
+
+/* .textBox h3 {
+	padding: 20px;
+} */
+
+section.servicesMainContent { 
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	padding: 15px 0;
+ }
+
+.servicesMainContent .servicesUpperMainContent {
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.servicesMainContent .servicesUpperMainContent .textBox button {
+	background: white;
+	font-size: 16px;
+	padding: 5px 20px;
+	margin-top: 10px;
+	border-radius: 5px;
 }
 
 .servicesBottomPara {
@@ -179,11 +239,32 @@ img.services-header-img {
 }
 
 .services-info-img {
-	width: 45%;
+	width: 47%;
+	height: auto;
+	padding-top: 30px;
 }
 
 section.bottomWrapper {
 	display:flex;
-	justify-content: space-around;
+	justify-content: space-between;
+	padding: 10px;
+}
 
+section.bottomWrapper h3{
+	padding-top: 30px;
+}
+
+section.bottomWrapper ul {
+	padding: 10px 0;
+}
+
+section.bottomWrapper ul li{
+	padding: 10px;
+	list-style-type: square;
+	list-style-position: inside;
+}
+
+footer.servicesFooter {
+	text-align: center;
+	padding: 20px 0;
 }
